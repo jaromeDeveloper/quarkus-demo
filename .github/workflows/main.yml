@@ -33,7 +33,7 @@ jobs:
       uses: sonarsource/sonarcloud-github-action@master
       with:
         args: >
-          -Dsonar.projectKey=jaromeDeveloper-demo
+          -Dsonar.projectKey=jaromeDeveloper
           -Dsonar.organization=jaromeDeveloper
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
