@@ -2,9 +2,9 @@ name: Build and Analyze
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
       uses: sonarsource/sonarcloud-github-action@master
       with:
         args: >
-          -Dsonar.projectKey=TU_USUARIO_quarkus-demo
-          -Dsonar.organization=TU_ORGANIZACION
+          -Dsonar.projectKey=jaromeDeveloper
+          -Dsonar.organization=jaromeDeveloper
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
