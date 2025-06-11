@@ -40,6 +40,6 @@ public class BadCode {
 
     // 🔴 método no utilizado (dead code)
     public static void unused() {
-        System.out.println("Nunca se usa");
+        System.out.println("Nunca se usa"); 
     }
 }
