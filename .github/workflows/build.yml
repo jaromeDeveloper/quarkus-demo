@@ -40,7 +40,7 @@ jobs:
             | jq -r '.projectStatus.status')
           echo "Estado Quality Gate: $STATUS"
           if [ "$STATUS" != "OK" ]; then
-            echo "❌ Quality Gate fallido"
+            echo "❌ Quality Gate fallido" 
             exit 1
           fi
 
